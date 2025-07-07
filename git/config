@@ -1,0 +1,8 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Akira Uehara
+	email = 43617371+AkiraUehara@users.noreply.github.com
+
+[core]
+	editor = nvim
