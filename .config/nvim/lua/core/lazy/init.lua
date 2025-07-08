@@ -4,7 +4,7 @@ require('lazy').setup({
   spec = {
     { import = 'plugins' },
   },
-  install = { colorscheme = { 'habamax' } },
+  install = { colorscheme = { 'catppuccin' } },
   checker = { enabled = true },
     ui = {
     icons = vim.g.have_nerd_font and {} or {
