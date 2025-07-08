@@ -16,3 +16,10 @@ map('n', '<C-Down>', ':resize -4<CR>')
 map('n', '<C-Left>', ':vertical resize -4<CR>')
 map('n', '<C-Right>', ':vertical resize +4<CR>')
 
+-- Quickfix navigation.
+map('n', '<C-n>', ':cnext<CR>')
+map('n', '<C-p>', ':cprev<CR>')
+
+-- Exit terminal mode in the builtin terminal.
+-- NOTE: This won't work in all terminal emulators/tmux/etc.
+map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })

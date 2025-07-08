@@ -10,3 +10,5 @@ map('v', '<A-k>', ":m '<-2<CR>gv=gv")
 map('v', '<', '<gv')
 map('v', '>', '>gv')
 
+-- Diagnostic keymaps.
+map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
