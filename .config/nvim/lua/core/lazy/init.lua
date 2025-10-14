@@ -4,9 +4,14 @@ require('lazy').setup({
   spec = {
     { import = 'plugins' },
   },
-  install = { colorscheme = { 'catppuccin' } },
-  checker = { enabled = true },
-    ui = {
+  install = {
+    colorscheme = { 'catppuccin' },
+  },
+  checker = {
+    enabled = true,
+  },
+  ui = {
+    border = 'rounded',
     icons = vim.g.have_nerd_font and {} or {
       cmd = '⌘',
       config = '🛠',
@@ -24,4 +29,3 @@ require('lazy').setup({
     },
   },
 })
-
