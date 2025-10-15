@@ -16,10 +16,15 @@ return {
     { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
   },
   config = function()
-   require('telescope').setup({
-     extensions = {
+    require('telescope').setup({
+      extensions = {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
+        },
+      },
+      pickers = {
+        find_files = {
+          find_command = { 'rg', '--files', '--hidden', '-g', '!.git' },
         },
       },
     })
@@ -58,4 +63,3 @@ return {
     end, { desc = '[S]earch [N]eovim files' })
   end,
 }
-
